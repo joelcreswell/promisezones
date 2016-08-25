@@ -19,6 +19,7 @@ system('git remote set-url origin ...')
 
 requirements <- c('tidyr', 'ggplot2', 'RSQLite', 'rmarkdown')
 missing <- setdiff(..., rownames(installed.packages()))
+
 if (...) {
   install.packages(missing)
 }
