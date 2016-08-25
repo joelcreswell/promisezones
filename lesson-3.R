@@ -59,19 +59,15 @@ year_wgt
 
 histo <- ggplot(data = surveys_dm,
                 aes(x = weight, fill = sex)) +
-  geom_ ...
+  geom_...
 histo
 
-title <- expression(paste(italic("Dipodomys merriami"),
-                          " weight distribution"))
 histo <- histo +
-  ...(title = title,
+  ...(title = "Dipodomys merriami weight distribution",
        x = "Weight (g)",
        y = "Count") +
   scale_x_continuous(limits = c(20, 60),
-                     breaks = c(20, 30, 40, 50, 60),
-                     expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0, 0))
+                     breaks = c(20, 30, 40, 50, 60))
 histo
 
 histo <- histo +
