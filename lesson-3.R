@@ -24,6 +24,7 @@ ggplot(data = surveys,
 
 ## Adding and customizing scales
 
+levels(surveys$sex) <- c("Female", "Male")
 surveys_dm <- filter(surveys, ...)
 ggplot(...,
        aes(x = year, y = weight)) +
@@ -47,8 +48,7 @@ year_wgt
 year_wgt <- year_wgt +
   scale_color_manual(...,
                      ...) +
-  ...(values = c(3, 2),
-      labels = c("Female", "Male"))
+  ...(values = c(3, 2))
 year_wgt
 
 ## Exercise 2
