@@ -18,9 +18,15 @@ system('git remote set-url origin ...')
 ## Install missing packages
 
 requirements <- c('tidyr',
-                  'ggplot2',
+                  'dplyr',
                   'RSQLite',
-                  'rmarkdown')
+                  'sp',
+                  'rgdal',
+                  'rgeos',
+                  'raster',
+                  'shiny',
+                  'leaflet',
+                  'ggplot2')
 missing <- setdiff(...,
                    rownames(installed.packages()))
 
