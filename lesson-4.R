@@ -1,9 +1,9 @@
 ## Tidy data concept
 
 counts_df <- data.frame(
-  day = c("Monday", ...),
-  wolf = c(2, 1, 3),
-  hare = c(...),
+  day = c("Monday", "Tuesday", "Wednesday"),
+  wolf = c(2, ...),
+  hare = ...,
   ...
 )
 
@@ -44,6 +44,12 @@ counts_1990_winter <- summarize(..., count = n())
 ## Exercise 3
 
 ...
+
+## Pivto tables through aggregate and spread
+
+surveys_1990_winter_gb <- group_by(surveys_1990_winter, ...)
+counts_by_month <- ...(surveys_1990_winter_gb, ...)
+pivot <- ...
 
 ## Transformation of variables
 
