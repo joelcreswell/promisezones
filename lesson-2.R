@@ -1,63 +1,84 @@
-## Tidy data concept
+## The Editor
 
-counts_df <- data.frame(
-  day = c("Monday", ...),
-  wolf = c(2, 1, 3),
-  hare = c(...),
-  ...
-)
+vals <- ...
 
-## Reshaping multiple columns in category/value pairs
+vals <- seq(...,
+            ...)
 
-library(tidyr)
-counts_gather <- gather(counts_df, ...)
+## Vectors
 
-counts_spread <- spread(counts_gather, ...)
+counts ...
+
+## Lists
+
+... <- list(...)
+... <- ...(list(1, 2), c(3, 4))
+
+## Factors
+
+education <- ...(c("college", "highschool", "college", "middle"),
+                 ... = c("middle", "highschool", ...),
+                 ...)
+
+## Data Frames
+
+... data.frame(...)
 
 ## Exercise 1
 
 ...
 
-## Read comma-separated-value (CSV) files
+## Names
 
-surveys <- ...
+names(...) <- ...
 
-## Subsetting and sorting
+## Subsetting ranges
 
-library(dplyr)
-surveys_1990_winter <- filter(...)
-
-surveys_1990_winter <- select(surveys_1990_winter, ...)
-
-sorted <- ...(surveys1990_winter, ...)
+days <- c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+weekdays <- ...
+...
 
 ## Exercise 2
 
 ...
 
-## Grouping and aggregation
+## Anatomy of a function
 
-surveys_1990_winter_gb <- group_by(...)
-
-counts_1990_winter <- summarize(..., count = n())
+function(...) {
+  ...
+  return(...)
+}
 
 ## Exercise 3
 
 ...
 
-## Transformation of variables
+## Distributions and statistics
 
-prop_1990_winter <- mutate(...)
+x <- rnorm(..., mean = .., sd = ...)
+y <- r...(n = 100, size = 50, ...)
+
+fit <- ...(y ... x)
 
 ## Exercise 4
 
 ...
 
-## Chainning with pipes
+## Install missing packages
 
-prop_1990_winter_piped <- surveys %>%
-  filter(year == 1990, month %in% 1:3)
-  ... # select all columns but year
-  ... # group by species_id
-  ... # summarize with counts
-  ... # mutate into proportions
+requirements <- c('tidyr',
+                  'dplyr',
+                  'RSQLite',
+                  'sp',
+                  'rgdal',
+                  'rgeos',
+                  'raster',
+                  'shiny',
+                  'leaflet',
+                  'ggplot2')
+missing <- setdiff(...,
+                   rownames(installed.packages()))
+
+if (...) {
+  install.packages(missing)
+}
