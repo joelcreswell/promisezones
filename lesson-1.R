@@ -15,21 +15,3 @@ function(...) {         # The arguments, or input, to the function goes here.
 
 system('git remote set-url origin ...')
 
-## Install missing packages
-
-requirements <- c('tidyr',
-                  'dplyr',
-                  'RSQLite',
-                  'sp',
-                  'rgdal',
-                  'rgeos',
-                  'raster',
-                  'shiny',
-                  'leaflet',
-                  'ggplot2')
-missing <- setdiff(...,
-                   rownames(installed.packages()))
-
-if (...) {
-  install.packages(missing)
-}
