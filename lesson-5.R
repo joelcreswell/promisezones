@@ -22,7 +22,7 @@ ggplot(data = surveys,
 
 ...
 
-## Adding and customizing scales
+## Adding a regression line
 
 levels(surveys$sex) <- c("Female", "Male")
 surveys_dm <- filter(surveys, ...)
@@ -34,21 +34,33 @@ ggplot(...,
              fun.y = "mean") +
   ...
 
-year_wgt <- ggplot(data = surveys_dm,
-                   aes(...,
-                       ...,
-                       ...)) +
+ggplot(data = surveys_dm,
+       aes(...,
+           ...,
+           ...)) +
   geom_point(aes(shape = sex),
              size = 3,
              stat = "summary",
              fun.y = "mean") +
   geom_smooth(method = "lm")
-year_wgt
 
+# Storing and re-plotting
+
+year_wgt <- ggplot(data = surveys_dm,
+                   aes(x = year,
+                       y = weight,
+                       color = sex)) +
+  geom_point(aes(shape = sex),
+             size = 3,
+             stat = "summary",
+             fun.y = "mean") +
+  geom_smooth(method = "lm")
+
+year_wgt +
+  ...
+                     
 year_wgt <- year_wgt +
-  scale_color_manual(...,
-                     ...) +
-  ...(values = c(3, 2))
+  scale_color_manual(...)
 year_wgt
 
 ## Exercise 2
