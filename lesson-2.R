@@ -66,16 +66,17 @@ fit <- ...(y ... x)
 
 ## Install missing packages
 
-requirements <- c('tidyr',
-                  'dplyr',
+requirements <- c('dplyr',
+                  'ggplot2',
+                  'leaflet',
                   'RSQLite',
-                  'sp',
                   'rgdal',
                   'rgeos',
                   'raster',
                   'shiny',
-                  'leaflet',
-                  'ggplot2')
+                  'sp',
+                  'tidyr',
+                  'tmap')
 missing <- setdiff(...,
                    rownames(installed.packages()))
 
