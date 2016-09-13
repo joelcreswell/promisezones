@@ -1,17 +1,8 @@
-## Scripting in the editor
+## Configure git
 
-... <- c(...)
+system("git config --global user.name ...")
+system("git config --global user.email ...")
 
-... <- data.frame(...)
-
-## Anatomy of a function
-
-function(...) {         # The arguments, or input, to the function goes here.  
-   ...                  # The body of the function goes here.
-   return(...)          # Any output of the function goes here.
-}
-
-## Change the url for the origin repo
+## Set a new origin URL
 
 system('git remote set-url origin ...')
-
