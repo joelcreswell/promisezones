@@ -58,7 +58,7 @@ function(...) {
 x <- rnorm(..., mean = .., sd = ...)
 y <- r...(n = 100, size = 50, ...)
 
-fit <- ...(y ... x)
+fit <- ...
 
 ## Exercise 4
 
