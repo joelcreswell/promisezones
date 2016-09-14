@@ -9,3 +9,6 @@ Goals:
 4. Get more comfortable with scalable/reproducible workflows.
 5. Create a meaningful visualization to express perceptions of environmental quality.  
 6. Create data visualization of bibilo data
+
+Learn to merge documents!
+
