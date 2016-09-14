@@ -1,7 +1,6 @@
 #Promise Zones Project
 
 Collaborators: Maryann Cairns, Joel Creswell, Melissa Day, Emily Eisenhauer, Diana Weber
-###~*~*~*~*~*~*####
 
 Goals:
 
@@ -10,5 +9,7 @@ Goals:
 3. Get more comfortable with version control for multiple users.  
 4. Get more comfortable with scalable/reproducible workflows.
 5. Create a meaningful visualization to express perceptions of environmental quality.  
+6. Create data visualization of bibilo data
 
 Learn to merge documents!
+
