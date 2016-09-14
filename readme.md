@@ -8,3 +8,4 @@ Goals:
 3. Get more comfortable with version control for multiple users.  
 4. Get more comfortable with scalable/reproducible workflows.
 5. Create a meaningful visualization to express perceptions of environmental quality.  
+Have fun!
