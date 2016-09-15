@@ -12,7 +12,3 @@ write.csv(ejair, file = "ejair.csv")
 ##Read in ejair
 
 ejair <- read.csv("ejair.csv")
-
-##Get rid of empty columns in ejair
-
-ejair <- ejair[,-c(2,4)]
