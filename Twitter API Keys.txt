@@ -1,0 +1,7 @@
+Application: PZSentAnalysis
+Acct: @joelcreswell
+
+Consumer Key (API Key) gskubcc1Zee2CtF8cq5nL0sOt
+Consumer Secret (API Secret) asvO3Y7OZcOyDcniYhnM3AU0G5HoFqMRmnx2FoIAVwYiz6Ftv0
+Access Token 19549553-RqrRhnMGetWhSSTLQXyr08N0MGd2wExC30c52LGXg
+Access Token Secret IxlVFgFRmRikHCvZuL461ndIiRlj9o5REXz1WnMFFXclS 
