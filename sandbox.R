@@ -14,5 +14,6 @@ write.csv(ejair, file = "ejair.csv")
 ejair <- read.csv("ejair.csv")
 
 ##Quick plot
-
+library(dplyr)
+library(ggplot2)
 qplot(x = PM2.5, y = EJPM2.5, data = ejair)
