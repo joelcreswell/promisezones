@@ -1,0 +1,12 @@
+Using data downloaded from EJ Screen
+Extract variables PM2.5, EJPM2.5, FIPS, state
+Upload to GitHub as > ejair.csv (Joel)
+
+Each collaborator creates separate .R files for the code for their project.
+
+Visualization goals:
+1. Boxplot of PM2.5 and EJPM2.5 for each PZ
+2. Promise zone maps overlayed with PM2.5 and EJ stat labels.
+3. Tweets? 
+
+
