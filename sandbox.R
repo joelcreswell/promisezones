@@ -13,6 +13,6 @@ write.csv(ejair, file = "ejair.csv")
 
 ejair <- read.csv("ejair.csv")
 
-##Get rid of empty columns in ejair
+##Quick plot
 
-ejair <- ejair[,-c(2,4)]
+qplot(x = PM2.5, y = EJPM2.5, data = ejair)
