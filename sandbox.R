@@ -12,3 +12,7 @@ write.csv(ejair, file = "ejair.csv")
 ##Read in ejair
 
 ejair <- read.csv("ejair.csv")
+
+##Quick plot
+
+qplot(x = PM2.5, y = EJPM2.5, data = ejair)
