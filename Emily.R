@@ -4,11 +4,15 @@ ejair <- read.csv("ejair.csv")
 
 ## start map
 
-library(rgdal)
+#unzip("Promise_Zones.zip")
 
+<<<<<<< HEAD
 
 #unzip("Promise_Zones.zip")
 
+=======
+library(rgdal)
+>>>>>>> 4a4bac60a53941a5ddb044f24a2cc1dfd5da04eb
 
 PZ <- readOGR(getwd() , "Promise_Zones")
 
@@ -26,17 +30,21 @@ qtm(PZ, fill = "PV_RATE",
 
 library(leaflet)
 
-PZ_leaflet <- leaflet() %>%
-  addTiles()%>%
-  addPolygons(PZ)%>%
-  setView(lng = -95.7129, lat = 37.0902, zoom = 4)
-
-PZ_leaflet
-
-pal=color=colorNumeric(blues9, PZ$PV_RATE)
 
 leaflet(PZ)%>%
   addPolygons(popup=PZ$COMMUNITY)%>%
+  addTiles
+
+
+
+
+pal=color=colorNumeric(blues9, PZ$PV_RATE)
+
+<<<<<<< HEAD
+leaflet(PZ)%>%
+  addPolygons(popup=PZ$COMMUNITY)%>%
   addTiles()
+=======
+>>>>>>> 4a4bac60a53941a5ddb044f24a2cc1dfd5da04eb
 
 
