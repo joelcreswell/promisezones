@@ -48,7 +48,7 @@ ggplot(data = ejair, aes(x = State, y = EJPM2.5)) + geom_boxplot() +
              color = "red") +
   labs(title = expression("EJ rating for PM"[2.5] ~ "in communities by state"),
        x = "State",
-       y = expression(EJ~PM[2.5]~(mu~g/m^{3}))) +
+       y = expression(EJ~PM[2.5])) + #units???
   theme_bw() +
   theme(plot.title = element_text(face = "bold", vjust = 2),
         axis.title.y = element_text(size = 13, vjust = 1), 
