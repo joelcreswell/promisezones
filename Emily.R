@@ -6,7 +6,9 @@ ejair <- read.csv("ejair.csv")
 
 library(rgdal)
 
-unzip("Promise_Zones.zip")
+
+#unzip("Promise_Zones.zip")
+
 
 PZ <- readOGR(getwd() , "Promise_Zones")
 
@@ -31,9 +33,10 @@ PZ_leaflet <- leaflet() %>%
 
 PZ_leaflet
 
+pal=color=colorNumeric(blues9, PZ$PV_RATE)
 
 leaflet(PZ)%>%
-  addPolygons()%>%
+  addPolygons(popup=PZ$COMMUNITY)%>%
   addTiles()
 
 
